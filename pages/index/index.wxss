@@ -1,0 +1,57 @@
+.swiper-content {
+  text-align: center;
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.silde-image {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background: #f2f2f2f2; */
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 26rpx;
+  padding: 40rpx 0;
+}
+
+.img image {
+  width: 86rpx;
+  height: 68rpx;
+}
+
+.hr {
+  border: 15rpx solid #f4f5f6;
+}
+
+.bld image {
+  width: 100%;
+}
+
+.bld .oneb image {
+  height: 300rpx;
+}
+
+.bld .twob {
+  display: flex;
+}
+
+.bld .twob image {
+  height: 200rpx;
+}
+
+.pic {
+  padding: 20rpx;
+}
+
+.pic image {
+  width: 50%;
+  height: 100px;
+}

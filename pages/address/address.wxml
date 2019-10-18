@@ -1,0 +1,38 @@
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+    <view class="info {{flag == 0?'select':'normal'}}" id="0" bindtap="switchNav">
+      <view class="name">
+        <text>代码修仙</text>
+        <text>137477769394</text>
+      </view>
+      <view class="address">
+        <text>代码修仙群</text>
+        <text>0760</text>
+      </view>
+    </view>
+    <view class="opr">
+      <image src="../../image/pen.png" style="width:40rpx;height:40rpx;"></image>
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <view class="item" wx:for="{{addressData}}" wx:key="{{index}}" wx:if="{{addressData !=0}}">
+    <view class="info {{flag == index+1?'select':'normal'}}" id="{{index+1}}" bindtap="switchNav">
+      <view class="name">
+        <text>{{item.userName}}</text>
+        <text>{{item.userPhone}}</text>
+      </view>
+      <view class="address">
+        <text>{{item.userAdder}}</text>
+        <text>0760</text>
+      </view>
+    </view>
+    <view class="opr">
+      <image src="../../image/pen.png" style="width:40rpx;height:40rpx;"></image>
+    </view>
+  </view>
+  <view class="bg" bindtap="newAddress">
+    <view class="newAddress">+新增地址</view>
+  </view>
+</view>

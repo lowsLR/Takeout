@@ -1,0 +1,101 @@
+/* pages/supermarket/supermarket.wxss */
+
+.content {
+  display: flex;
+}
+
+.left {
+  width: 30%;
+  font-size: 30rpx;
+}
+
+.left view {
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  overflow: hidden; /*超出部分隐藏*/
+  white-space: nowrap; /*不换行*/
+  text-overflow: ellipsis; /*超出部分文字以...显示*/
+}
+
+.select {
+  background: #fff;
+  border-left: 10rpx solid #ffd600;
+  font-weight: bold;
+}
+
+.normal {
+  background: #f8f8f8;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+
+.right {
+  width: 70%;
+  margin: 20rpx;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+
+.hr {
+  border: 1rpx solid #ccc;
+  opacity: 0.2;
+}
+
+.category .title {
+  background: #f2f2f2;
+}
+
+.item {
+  display: flex;
+  padding: 20rpx;
+}
+
+.info {
+  width: 80%;
+  margin-left: 10rpx;
+}
+
+.name {
+  font-size: 32rpx;
+  text-align: left;
+}
+
+.item image {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.priceInfo {
+  display: flex;
+  margin-top: 30rpx;
+  align-items: center;
+}
+
+.price {
+  width: 80%;
+  font-size: 30rpx;
+  color: #f00;
+  text-align: left;
+}
+
+.count {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 50rpx;
+  height: 50rpx;
+  color: #f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+swiper {
+  overflow-y: scroll;
+  overflow: auto;
+}

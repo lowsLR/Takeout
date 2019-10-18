@@ -1,0 +1,80 @@
+/* pages/address/address.wxss */
+
+.content {
+  background: #f9f9f8;
+  height: 1200rpx;
+}
+
+.hr {
+  height: 40rpx;
+}
+
+.item {
+  background: #fff;
+  display: flex;
+  height: 150rpx;
+  padding: 20rpx;
+}
+
+.info {
+  width: 80%;
+  line-height: 70rpx;
+}
+
+.name {
+  margin-left: 40rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.name text, .address text {
+  margin-right: 20rpx;
+}
+
+.address {
+  margin-left: 40rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.opr {
+  border-left: 2rpx solid #f2f2f2;
+  line-height: 170rpx;
+  width: 20%;
+  text-align: center;
+}
+
+.line {
+  border: 2rpx solid #ccc;
+  opacity: 0.2;
+}
+
+.select {
+  border-left: 10rpx solid #fde252;
+}
+
+.normal {
+  border-left: 10rpx solid #fff;
+}
+
+.bg {
+  background: #fff;
+  height: 110rpx;
+  border: 2rpx solid #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.newAddress {
+  border: 2rpx solid #f2f2f2;
+  width: 440rpx;
+  height: 70rpx;
+  background: #ffd600;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}

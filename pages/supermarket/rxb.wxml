@@ -1,0 +1,15 @@
+<block wx:for="{{item.foods}}" wx:for-item="foods" wx:key="index">
+  <view class="item">
+    <view class="icon">
+      <image src="{{foods.image}}"></image>
+    </view>
+    <view class="info">
+      <view class="name">{{foods.name}}</view>
+      <view class="priceInfo">
+        <view class="price">￥{{foods.price}}</view>
+        <view class="count" bindtap="addGoods" data-id="{{foods.name}}">+</view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="hr"></view> -->
+</block>

@@ -1,0 +1,27 @@
+<view class="content">
+  <view class="left">
+    <block wx:for="{{goods}}" wx:key="index">
+      <view class="{{flag == index?'select':'normal'}}" id="{{index}}" bindtap="switchNav">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="right">
+    <view class="order">
+      <view>综合排名</view>
+      <view>按价格</view>
+      <view>按销量</view>
+    </view>
+    <view class="hr"></view>
+    <view class="category">
+      <swiper current="{{currentTab}}" vertical="{{vertical}}" style="height:1000rpx">
+        <block wx:for="{{goods}}" wx:key="index">
+          <swiper-item>
+            <scroll-view scroll-y="true" style="height:1000rpx">
+              <view class="title"> {{item.name}}</view>
+              <include src="rxb.wxml" />
+            </scroll-view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>

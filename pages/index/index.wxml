@@ -1,0 +1,51 @@
+<view class="home-layout">
+  <!-- 轮播图 -->
+  <view class="swiper-content">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#fff" indicator-active-color="#ffd600">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item.url}}" class="silde-image"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- icon -->
+  <view class="nav">
+    <block wx:for="{{icon}}" wx:key="{{item.id}}">
+      <view class="nav-item">
+        <view class="img">
+          <image src="{{item.url}}"></image>
+        </view>
+        <view class="title">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="hr"></view>
+  <view class="bld">
+    <view class="oneb">
+      <image src="http://i9.hexunimg.cn/2016-05-08/183745636.jpg"></image>
+    </view>
+    <view class="twob">
+      <image src="http://ww2.sinaimg.cn/large/005zNykqjw1ev11al26pzj30fk078dhz.jpg"></image>
+      <image src="http://source.7808.cn/article/20150814/14395240862617.jpg"></image>
+    </view>
+  </view>
+  <!-- icons -->
+  <view class="nav">
+    <block wx:for="{{icons}}" wx:key="{{item.id}}">
+      <view class="nav-item">
+        <view class="img">
+          <image src="{{item.url}}"></image>
+        </view>
+        <view class="title">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+  <!-- pic -->
+  <view class="pic">
+    <image src="https://img.alicdn.com/imgextra/i1/45482244/O1CN01XhY75D1SRnGldsdch_!!0-saturn_solar.jpg_220x220.jpg_.webp"></image>
+    <image src="https://img.alicdn.com/imgextra/i1/121939392/O1CN01kbadPL2JFaPcTLqR0_!!0-saturn_solar.jpg_220x220.jpg_.webp"></image>
+    <image src="https://img.alicdn.com/imgextra/i1/99790730/O1CN01Wrugr21HGNejLETHG_!!0-saturn_solar.jpg_220x220.jpg_.webp"></image>
+    <image src="https://img.alicdn.com/imgextra/i4/128946882/O1CN01tD2LNM20i0GuslTe5_!!0-saturn_solar.jpg_220x220.jpg_.webp"></image>
+  </view>
+</view>

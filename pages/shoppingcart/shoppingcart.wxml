@@ -1,0 +1,66 @@
+<!--pages/shoppingcart/shoppingcart.wxml-->
+<view class="shoppingCart-layout">
+  <view class="hr"></view>
+  <view class="address" bindtap="selectAddress">
+    <view class="desc">请定位您的坐标</view>
+    <view class="detail">></view>
+  </view>
+  <view class="hr"></view>
+  <view class="info">
+    <view class="sscs">
+      <image src="http://i9.hexunimg.cn/2016-05-08/183745636.jpg" style="width:100%;height:300rpx"></image>
+    </view>
+    <view class="line"></view>
+    <view class="receive">
+      <view>
+        <view class="time">
+          <view class="l">收货时间</view>
+          <view class="r">一小时后送达可预定</view>
+        </view>
+        <view class="freight">
+          ￥0元起送，22：00前满￥30免运费，22：00点满￥69免运费
+        </view>
+      </view>
+      <view class="detail2">></view>
+    </view>
+    <view class="line"></view>
+    <view class="items">
+      <checkbox-group bindchange="checkboxChange">
+        <block wx:for="{{orders}}" wx:key="{{index}}">
+          <view class="item" wx:if="{{orders}}">
+            <view class="icon">
+              <checkbox value="{{item.name}}" checked="{{selected}}"></checkbox>
+            </view>
+            <view class="pic">
+              <image src="{{item.icon}}" style="width:140rpx;height:174rpx"></image>
+            </view>
+            <view class="order">
+              <view class="title">{{item.name}}</view>
+              <view class="priceInfo">
+                <view class="price">￥{{item.price}}</view>
+                <view class="minus" id="{{item.name}}" bindtap="minusGoods">-</view>
+                <view class="count">
+                  {{item.count}}
+                </view>
+                <view class="add" id="{{item.name}}" bindtap="addGoods">+</view>
+              </view>
+            </view>
+          </view>
+          <view class="line"></view>
+        </block>
+      </checkbox-group>
+      <checkbox-group bindchange="checkAll">
+        <view class="all">
+          <view>
+            <checkbox checked="{{selectedAll}}"></checkbox>
+          </view>
+          <view class="selectAll">全选</view>
+          <view class="total">
+            共￥{{totalPrice}}
+          </view>
+          <view class="opr">选好了</view>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+</view>

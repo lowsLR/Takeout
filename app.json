@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/address/address",
+    "pages/newAddress/newAddress",
+    "pages/shoppingcart/shoppingcart",
+    "pages/supermarket/supermarket",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffd600",
+    "navigationBarTitleText": "配送至:体育西路",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fffbf8",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/image/index_option.png",
+        "selectedIconPath": "/image/index_selected.png"
+      },
+      {
+        "pagePath": "pages/supermarket/supermarket",
+        "text": "闪送超市",
+        "iconPath": "/image/supermarket_option.png",
+        "selectedIconPath": "/image/supermarket_selecter.png"
+      },
+      {
+        "pagePath": "pages/shoppingcart/shoppingcart",
+        "text": "购物车",
+        "iconPath": "/image/shoppingcart_option.png",
+        "selectedIconPath": "/image/shoppingcart_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/image/me_option.png",
+        "selectedIconPath": "/image/me_selecter.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

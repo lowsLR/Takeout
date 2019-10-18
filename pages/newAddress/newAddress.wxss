@@ -1,0 +1,61 @@
+/* pages/newAddress/newAddress.wxss */
+
+.content {
+  background: #f9f9f8;
+  height: 1200rpx;
+}
+
+.hr {
+  height: 40rpx;
+}
+
+.bg {
+  background: #fff;
+  padding: 20rpx;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+  line-height: 120rpx;
+}
+
+.name {
+  width: 20%;
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.value {
+  width: 80%;
+  height: 120rpx;
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  /* border: 2rpx solid #f00; */
+}
+
+.value input {
+  height: 120rpx;
+  line-height: 120rpx;
+}
+
+.holder {
+  color: #aeaeae;
+  font-size: 32rpx;
+  font-weight: 100;
+}
+
+.line {
+  border: 1rpx solid #ccc;
+}
+
+.btn-area {
+  margin-top: 40rpx;
+  /* border: 1px solid #f59; */
+}
+
+.btn-area button {
+  background: #f00000;
+}
